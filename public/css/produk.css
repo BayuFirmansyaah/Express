@@ -1,0 +1,65 @@
+.hero{
+	width: 100%;
+	height: 400px;
+	margin-top: -5px;
+	background-image: url('../img/product-hero-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: lightgrey;
+}
+
+.hero::after{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.list-kategori-produk{
+	width: 100%;
+	height: auto;
+	padding: 60px 0px;
+}
+
+.wrap-kategori-produk{
+	width: 100%;
+	height: 250px;
+	background-color: lightgrey;
+	border-radius: 8px;
+	margin: 15px 0px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.wrap-kategori-produk::after{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+@media(max-width: 992px){
+	.list-kategori-produk{
+		padding: 30px 0px;
+	}
+}
+
+
+@media(max-width: 600px){
+	.list-kategori-produk{
+		padding: 15px 0px;
+	}
+
+	.wrap-kategori-produk{
+		margin: 15px 0px;
+	}
+}

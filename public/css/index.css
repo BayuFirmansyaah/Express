@@ -1,0 +1,273 @@
+.mobile{
+	display: none;
+}
+
+.image-hero{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+
+.image-hero img{
+	width: 100%;
+	margin-left: 10%;
+}
+
+.desc-hero{
+	margin-top: 110px;
+}
+
+.desc-hero .title{
+	font-size: 32px;
+	font-weight: 600;
+	color: var(--pink);
+}
+
+.desc-hero .desc{
+	margin-top: 15px;	
+	font-size: 23px;
+}
+
+.desc-hero .btn-temukan-solusi{
+	background-color: var(--pink);
+	color: white;
+	border-radius: 20px;
+	font-weight: 500;
+	padding: 5px 16px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+
+.my-product{
+	width: 100%;
+	background-color: var(--pink);
+	padding: 15px 0px 30px 0px;
+	margin-top: 45px;
+}
+
+.wrap-thumbnail{
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	border-radius: 15px;
+	margin: 15px 0px;
+}
+
+.title-row{
+	font-size: 28px;
+	margin: 15px 0px;
+	font-weight: 500;
+	color: var(--pink);
+	text-transform: capitalize;
+}
+
+.show-more{
+	display: none;
+}
+
+.get-online-store{
+	padding: 60px;
+}
+
+.wrap-get-store{
+	width: 100%;
+	height: 500px;
+	background-image: url('../img/online-store.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+
+.wrap-get-store::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.wrap-desc-get-store h1{
+	font-size: 28px;
+}
+
+
+.service{
+	width: 100%;
+	padding: 30px 0px 45px 0px;
+	height: auto;
+	background-color: var(--pink);
+	color: white;
+}
+
+.wrap-service-box{
+	width: 100%;
+	height: 350px;
+	background-color: white;
+	border-radius: 15px;
+	margin: 15px;
+	position: relative;
+	padding: 15px;
+}
+
+.icon-service{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 15px auto;
+	background-color: #D6D6D6;
+}
+
+.title-service-box{
+	width: 100%;
+	margin: 15px 0px;
+	text-align: center;
+	color: var(--pink);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.testimonial{
+	width: 100%;
+	height: auto;
+	padding:  30px 0px 45px 0px;
+}
+
+.wrap-slide-testi{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.slide{
+	width: 25%;
+	height: 200px;
+	background-color: #e5e5e5;
+	float: left;
+	margin: 0px 15px;
+	justify-content: center;
+	display: flex;
+	margin-top: 40px;
+	border-radius: 15px;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+}
+
+.slide-active{
+	width: 40%;
+	height: 280px;
+	margin-top: 0px;
+}
+
+.wrap-dot{
+	margin: 0px auto;
+}
+
+.dot{
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	background-color: var(--secondary);
+	float: left;
+	margin: 0px 5px;
+	cursor: pointer;
+}
+
+.dot-active{
+	background-color: var(--pink) !important;
+}
+
+@media(max-width: 992px){
+	.mobile{
+		display: block;
+	}
+
+	.dekstop{
+		display: none;
+	}
+
+	.image-hero img{
+		margin-left: 0px;
+	}
+
+	.desc-hero{
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.desc-hero .title{
+		font-size: 26px;
+	}
+
+	.desc-hero .desc{
+		margin-top: 10px;	
+		font-size: 20px;
+	}
+
+	.desc-hero .btn-temukan-solusi{
+		padding: 5px 16px;
+		font-size: 17px;
+		margin-top: 10px;
+	}
+
+	.get-online-store{
+		padding: 30px 15px;
+	}
+
+	.wrap-service-box{
+		margin: 15px 0px;
+		height: 400px
+	}
+}
+
+
+@media(max-width: 600px){
+	.desc-hero{
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.desc-hero .title{
+		font-size: 23px;
+	}
+
+	.desc-hero .desc{
+		margin-top: 10px;	
+	}
+
+	.desc-hero .btn-temukan-solusi{
+		font-size: 16px;
+		padding: 4px 12px;
+	}
+
+	.m-d-none{
+		display: none;
+	}
+
+	.show-more{
+		display: block;
+		margin: 15px auto;
+		padding: 6px 16px;
+		background-color:transparent;
+		border: 1.5px solid white;
+		outline: none;
+		color: white;
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+
+	.get-online-store{
+		padding: 20px 0px;
+	}
+
+
+}
+
